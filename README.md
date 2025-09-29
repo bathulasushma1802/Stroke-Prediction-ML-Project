@@ -15,12 +15,32 @@ The model was trained on a dataset with minority classes under-represented, requ
 
 ---
 
-## ⚙️ Techniques Used  
-- **EDA**: Barplots,Histograms, Boxplots, Countplot
-- **Outlier Handling**: Capping using IQR
-- **Class Imbalance**: SMOTE (Synthetic Minority Oversampling)  
-- **Models**: Logistic Regression, Random Forest,SVM,Gradient Boosting, KNN Classification  
-- **Hyperparameter Tuning**: GridSearchCV  
+## 🛠️ Tech Stack  
+- **Programming:** Python  
+- **Libraries:** pandas, numpy, scikit-learn, imblearn, matplotlib, seaborn
+  
+---
+
+## 🔎 Key Steps  
+
+### 1. Exploratory Data Analysis (EDA)  
+- Checked distributions and class imbalance with histograms, barplots, countsplots
+- Identified outliers using  boxplots   
+
+### 2. Data Preprocessing  
+- Handled outliers with Capping using IQR
+- Used **SMOTE (Synthetic Minority Oversampling Technique)** to handle class imbalance  
+
+### 3. Model Building  
+- Trained datasets using different models Logistic Regression, Random Forest,SVM,Gradient Boosting, KNN Classification
+  
+### 4. Hyperparameter Tuning  
+- Used **GridSearchCV/RandomizedSearchCV** to optimize model parameters  
+- Best logistic regression params: `C=0.1, penalty=l2, solver=saga`  
+
+### 5. Model Evaluation  
+- Metrics: Accuracy, Precision, Recall, F1-Score  
+- Confusion Matrix , Classification Report 
 
 ---
 
