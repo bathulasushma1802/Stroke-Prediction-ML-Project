@@ -36,7 +36,6 @@ The model was trained on a dataset with minority classes under-represented, requ
   
 ### 4. Hyperparameter Tuning  
 - Used **GridSearchCV/RandomizedSearchCV** to optimize model parameters  
-- Best logistic regression params: `C=0.1, penalty=l2, solver=saga`  
 
 ### 5. Model Evaluation  
 - Metrics: Accuracy, Precision, Recall, F1-Score  
@@ -54,7 +53,7 @@ The model was trained on a dataset with minority classes under-represented, requ
   - **Best Params**: `max_depth': None, 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 300`  
   - **Cross-validated F1-score**: ~0.95 
   - **Test Accuracy**: ~0.90
-- Random Forest Classifier
+- Gradient Boosting
   - **Best Params**: `learning_rate': 0.1, 'max_depth': 7, 'n_estimators': 300, 'subsample': 0.8`  
   - **Cross-validated F1-score**: ~0.96
   - **Test Accuracy**: ~0.93
